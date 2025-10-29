@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Masahiro\\OneDrive\\Desktop\\Work\\\u6570\u7EC4\\\u6570\u7EC41\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB80C12-1A99-4AA7-B4B0-BD053377DB1C}|\u6570\u7EC41.vcxproj|C:\\Users\\Masahiro\\OneDrive\\Desktop\\Work\\\u6570\u7EC4\\\u6570\u7EC41\\004.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{ACB80C12-1A99-4AA7-B4B0-BD053377DB1C}|\u6570\u7EC41.vcxproj|solutionrelative:004.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "004.c",
+              "DocumentMoniker": "C:\\Users\\Masahiro\\OneDrive\\Desktop\\Work\\\u6570\u7EC4\\\u6570\u7EC41\\004.c",
+              "RelativeDocumentMoniker": "004.c",
+              "ToolTip": "C:\\Users\\Masahiro\\OneDrive\\Desktop\\Work\\\u6570\u7EC4\\\u6570\u7EC41\\004.c*",
+              "RelativeToolTip": "004.c*",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAAAKIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-10-29T10:16:02.107Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
