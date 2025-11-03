@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Masahiro\\OneDrive\\Desktop\\Work\\\u2116\\2025.10.18\\10.18\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{44DE408C-BDF7-458B-AF15-1039407105D1}|10.18.vcxproj|C:\\Users\\Masahiro\\OneDrive\\Desktop\\Work\\\u2116\\2025.10.18\\10.18\\10.18.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{44DE408C-BDF7-458B-AF15-1039407105D1}|10.18.vcxproj|solutionrelative:10.18.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "10.18.c",
+              "DocumentMoniker": "C:\\Users\\Masahiro\\OneDrive\\Desktop\\Work\\\u2116\\2025.10.18\\10.18\\10.18.c",
+              "RelativeDocumentMoniker": "10.18.c",
+              "ToolTip": "C:\\Users\\Masahiro\\OneDrive\\Desktop\\Work\\\u2116\\2025.10.18\\10.18\\10.18.c",
+              "RelativeToolTip": "10.18.c",
+              "ViewState": "AgIAAOAAAAAAAAAAAAAAAO4AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-10-21T00:18:56.218Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
