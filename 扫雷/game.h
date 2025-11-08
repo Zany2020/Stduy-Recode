@@ -18,6 +18,7 @@ void DisplayBoard(char board[ROWS][COLS], int row, int col);
 void SetMine(char board[ROWS][COLS], int row, int col);
 void Fine_Mine(char mine[ROWS][COLS], char show[ROWS][COLS], int row, int col);
 int get_mine_count(char mine[ROWS][COLS], int row, int col);
+<<<<<<< HEAD
 void Tag(char show[ROWS][COLS], int row, int col);
 void Expand(char mine[ROWS][COLS], char show[ROW][COL], int x, int y);
 
@@ -84,3 +85,6 @@ void Expand(char mine[ROWS][COLS], char show[ROW][COL], int x, int y);
 		}
 	}
 }*/
+=======
+
+>>>>>>> 9718bd6713f5035c90f34aa7d43275a756630882

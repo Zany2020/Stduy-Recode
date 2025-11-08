@@ -1,5 +1,8 @@
 ﻿#define _CRT_SECURE_NO_WARNINGS
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9718bd6713f5035c90f34aa7d43275a756630882
 #include"game.h"
 
 
@@ -87,6 +90,7 @@ int get_mine_count(char mine[ROWS][COLS], int x, int y)
 	return n;
 }
 
+<<<<<<< HEAD
 //标记功能
 void Tag(char show[ROWS][COLS], int row, int col)
 {
@@ -194,6 +198,8 @@ void Expand(char mine[ROWS][COLS], char show[ROWS][COLS], int x, int y)
 	}
 }
 
+=======
+>>>>>>> 9718bd6713f5035c90f34aa7d43275a756630882
 
 void Fine_Mine(char mine/**/[ROWS][COLS], char show[ROWS][COLS], int row, int col)
 {
@@ -225,9 +231,13 @@ void Fine_Mine(char mine/**/[ROWS][COLS], char show[ROWS][COLS], int row, int co
 				//统计旁边有几个雷
 				int count = get_mine_count(mine/**/, x, y);//这里的mine是在mine数组里寻找1来统计
 				show[x][y] = count + '0';
+<<<<<<< HEAD
 				Expand(mine, show, x, y);
 				DisplayBoard(show, ROW, COL);
 				Tag(show, ROW, COL);
+=======
+				DisplayBoard(show, ROW, COL);
+>>>>>>> 9718bd6713f5035c90f34aa7d43275a756630882
 			}
 		}
 		else
@@ -235,5 +245,9 @@ void Fine_Mine(char mine/**/[ROWS][COLS], char show[ROWS][COLS], int row, int co
 			printf("输入错误∑( 口 ||\n");
 		}
 	}
+<<<<<<< HEAD
 }
 
+=======
+}
+>>>>>>> 9718bd6713f5035c90f34aa7d43275a756630882
