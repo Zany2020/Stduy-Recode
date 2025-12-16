@@ -1,0 +1,5 @@
+﻿  contact.c
+C:\Users\Masahiro\OneDrive\Desktop\Work\练习\通讯录\contact.c(29,3): warning C4098: “AddContact”:“void”函数返回值
+C:\Users\Masahiro\OneDrive\Desktop\Work\练习\通讯录\contact.c(63,18): warning C4047: “函数”:“const char *”与“char”的间接级别不同
+C:\Users\Masahiro\OneDrive\Desktop\Work\练习\通讯录\contact.c(63,18): warning C4024: “strcmp”: 形参和实参 1 的类型不同
+  通讯录.vcxproj -> C:\Users\Masahiro\OneDrive\Desktop\Work\练习\通讯录\x64\Debug\通讯录.exe
