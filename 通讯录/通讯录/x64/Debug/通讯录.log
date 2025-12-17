@@ -1,5 +1,8 @@
 ﻿  contact.c
-C:\Users\Masahiro\OneDrive\Desktop\Work\练习\通讯录\contact.c(29,3): warning C4098: “AddContact”:“void”函数返回值
-C:\Users\Masahiro\OneDrive\Desktop\Work\练习\通讯录\contact.c(63,18): warning C4047: “函数”:“const char *”与“char”的间接级别不同
-C:\Users\Masahiro\OneDrive\Desktop\Work\练习\通讯录\contact.c(63,18): warning C4024: “strcmp”: 形参和实参 1 的类型不同
+C:\Users\Masahiro\OneDrive\Desktop\Work\练习\通讯录\contact.c(46,3): warning C4098: “AddContact”:“void”函数返回值
+C:\Users\Masahiro\OneDrive\Desktop\Work\练习\通讯录\contact.c(110,10): warning C4477: “printf”: 格式字符串“%-20d”需要类型“int”的参数，但可变参数 4 拥有了类型“int *”
+C:\Users\Masahiro\OneDrive\Desktop\Work\练习\通讯录\contact.c(110,10): warning C4313: "printf": 格式字符串中的 "%d" 与类型为 "int *" 的参数 4 冲突
+C:\Users\Masahiro\OneDrive\Desktop\Work\练习\通讯录\contact.c(136,10): warning C4477: “printf”: 格式字符串“%-20d”需要类型“int”的参数，但可变参数 4 拥有了类型“int *”
+C:\Users\Masahiro\OneDrive\Desktop\Work\练习\通讯录\contact.c(136,10): warning C4313: "printf": 格式字符串中的 "%d" 与类型为 "int *" 的参数 4 冲突
+C:\Users\Masahiro\OneDrive\Desktop\Work\练习\通讯录\contact.c(145,2): warning C4098: “ShoContact”:“void”函数返回值
   通讯录.vcxproj -> C:\Users\Masahiro\OneDrive\Desktop\Work\练习\通讯录\x64\Debug\通讯录.exe

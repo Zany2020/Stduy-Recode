@@ -24,10 +24,16 @@ int main()
 			DelContact(&con);
 			break;
 		case 3:
+			SeaContact(&con);
 			break;
 		case 4:
+			ModContact(&con);
 			break;
 		case 5:
+			ShoContact(&con);
+			break;
+		case 6:
+			SorContact(&con);
 			break;
 		case 0:
 			printf("ÍË³ö");

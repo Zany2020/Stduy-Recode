@@ -1,7 +1,9 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 #include<string.h>
+#include<stdlib.h>
 #include<assert.h>
+
 
 #define MAX 100
 #define MAX_NAME 20
@@ -20,7 +22,7 @@ typedef struct PeoInfo
 	char name[MAX_NAME];
 	int age;
 	char sex[MAX_SEX];
-	char tele[MAX_TELE];
+	int tele[MAX_TELE];
 	char addr[MAX_ADDR];
 }PeoInfo;
 
@@ -38,3 +40,11 @@ void InitContact(Contact* pc);
 void AddContact(Contact* pc);
 
 void DelContact(Contact* pc);
+
+void SeaContact(Contact* pc);
+
+void ShoContact(Contact* pc);
+
+void ModContact(Contact* pc);
+
+void SorContact(Contact* pc);
