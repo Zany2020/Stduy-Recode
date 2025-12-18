@@ -3,6 +3,7 @@
 #include<string.h>
 #include<stdlib.h>
 #include<assert.h>
+#include<errno.h>
 
 
 #define MAX 100
@@ -10,6 +11,8 @@
 #define MAX_SEX 10
 #define MAX_TELE 12
 #define MAX_ADDR 30
+#define DEFAFULT_SZ 3
+#define INC_SZ 2
 
 void meau();
 
@@ -28,14 +31,22 @@ typedef struct PeoInfo
 
 
 //Í¨Ñ¶Â¼
+//typedef struct Contact
+//{
+//	PeoInfo date[100];
+//	int count;
+//}Contact;
+
+
+//¶¯Ì¬°æ
 typedef struct Contact
 {
-	PeoInfo date[100];
+	PeoInfo* date;
 	int count;
+	int capacity;
 }Contact;
 
-
-void InitContact(Contact* pc);
+int InitContact(Contact* pc);
 
 void AddContact(Contact* pc);
 

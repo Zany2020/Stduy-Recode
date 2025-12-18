@@ -36,6 +36,7 @@ int main()
 			SorContact(&con);
 			break;
 		case 0:
+			Free(&con);
 			printf("ÍË³ö");
 			break;
 		default:

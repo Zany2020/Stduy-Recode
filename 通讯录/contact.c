@@ -31,20 +31,78 @@ int Find_name(Contact* pc, char* name)
 }
 
 
-void InitContact(Contact* pc)
+//void InitContact(Contact* pc)
+//{
+//	pc->count = 0;
+//	memset(pc->date, 0, sizeof(pc->date));
+//}
+
+
+//动态版本
+int InitContact(Contact* pc)
 {
 	pc->count = 0;
-	memset(pc->date, 0, sizeof(pc->date));
+	pc->date = (int*)calloc(3, sizeof(PeoInfo));
+	{
+		if (pc->date == NULL)
+		{
+			printf("%s\n", strerror(errno));
+			return 1;
+		}
+	}
+	pc->capacity = DEFAFULT_SZ;
+	return 0;
 }
 
-void AddContact(Contact* pc)
+
+//静态版本
+//void AddContact(Contact* pc)
+//{
+//	assert(pc);
+//	if (pc->count == MAX)
+//	{
+//		printf("满了\n");
+//		return 0;
+//	}
+//	printf("请输入名字：");
+//	scanf("%s", pc->date[pc->count].name);
+//				//两次 pc 是因为要从同一个通讯录结构体中，
+//				//既取「联系人数组」，又取「当前数量」，是结构体嵌套访问的正常逻辑
+//	printf("请输入年龄：");
+//	scanf("%d", &pc->date[pc->count].age);//&
+//	printf("请输入性别：");
+//	scanf("%s", pc->date[pc->count].sex);
+//	printf("请输入电话：");
+//	scanf("%d", pc->date[pc->count].tele);
+//	printf("请输入地址：");
+//	scanf("%s", pc->date[pc->count].addr);
+//
+//	pc->count++;
+//	printf("添加成功\n");
+//}
+
+
+//动态版本
+void CheckcCapacity(Contact*pc)
 {
 	assert(pc);
-	if (pc->count == MAX)
+	if (pc->count == pc->capacity)
 	{
-		printf("满了\n");
-		return 0;
+		PeoInfo* prt = realloc(pc->date, (pc->capacity + INC_SZ) * sizeof(PeoInfo));
+		if (prt == NULL)
+		{
+			printf("%s\n", strerror(errno));
+			return;
+		}
+		pc->date = prt;
+		pc->capacity += INC_SZ;
 	}
+	printf("增容成功");
+}
+void AddContact(Contact* pc)
+{
+	CheckcCapacity(pc);
+
 	printf("请输入名字：");
 	scanf("%s", pc->date[pc->count].name);
 				//两次 pc 是因为要从同一个通讯录结构体中，
@@ -61,6 +119,7 @@ void AddContact(Contact* pc)
 	pc->count++;
 	printf("添加成功\n");
 }
+
 
 void DelContact(Contact* pc)
 {
@@ -206,13 +265,11 @@ void ModContact(Contact* pc)
 	return;
 }
 
-
 int CompareName(const void* e1, const void* e2)
 {
 	return strcmp(((PeoInfo*)e1)->name, ((PeoInfo*)e2)->name);
 	//e实际指向的是PeoInfo结构体元素,因此必须强制转换为PeoInfo*类型
 }
-
 
 void SorContact(Contact* pc)
 {
@@ -232,4 +289,11 @@ void SorContact(Contact* pc)
 											- 正数：第一个元素 > 第二个元素（升序时放后面*/
 	printf("排序成功\n");
 	return;
+}
+
+void Free(Contact* pc)
+{
+	assert(pc);
+	free(pc->date);
+	pc->date == NULL;
 }
